@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stefano Nebo's Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="LandingStyle.css">
+
+	<script src="https://kit.fontawesome.com/2abcb056ce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<img src="pictures/logo.png" class="logo">
+				<ul id="sideMenu">
+					<li><a href="#header">Home </a></li>
+					<li><a href="#About">About </a></li>
+					<li><a href="#services">Services </a></li>
+					<li><a href="#portfolio">Skills </a></li>
+					<li><a href="#contact">Contact </a></li>
+					<i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+				</ul>
+				<i class="fa-solid fa-bars" onclick="openMenu()"></i>
+			</nav>
+			<div class="header-txt">
+				<p>UI/UX, 3D, Frontend & Software Developer</p>
+				<h1>Hi, I'm <span>Stefano N.</span><br>a 3D artist<br> and programer<br> from Nigeria
+				</h1>
+			</div>
+		</div>
+	</div>
+	<!-----------------About-------------->
+	<div id="About">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="pictures/me_side_bkg.jpeg">
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+					<p>I've always been techonologically inclined and very curious with the workings and gimmics of the
+						world around us.
+						When I first discovered what can be achived with programming and technology, this only fueled my
+						curosity and excitement more and more.
+						I did what i could to learn and ended up learning alot of things along the way.
+						I enjoy reading adventurous or thrillir series (goosebumps by R.L Stine), or just staying ative
+						moving about and
+						listening to my favorite tracks, Or just stay on the screen and play a few games.</p>
+					<div class="tab-titles">
+						<p class="tab-links activeL" onclick="openTab('skills')">Skills</p>
+						<p class="tab-links" onclick="openTab('experience')">Experience</p>
+						<p class="tab-links" onclick="openTab('education')">Education</p>
+					</div>
+					<div class="tab-contents activeTab" id="skills">
+						<ul>
+							<li><span>UI?UX</span><br>Designing Web Interfaces</li>
+							<li><span>Logo Designs</span><br>Creating Iconic Original Logo designs</li>
+							<li><span>3D Artist</span><br>Modeling and texturing 3D interior and exterior designs, game
+								assets, enviroments and product markups</li>
+							<li><span>Software Programmer</span><br>Proficient in C++, Python, c# in software and game
+								development</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>2022 -Current</span><br>Graphic and design Artist for Films, Civil construction
+								and Product design. </li>
+							<li><span>2020 - 2021</span><br>Frontend Developer and Graphic artist for TechUp design
+								studios</li>
+							<li><span>2018 - 2019</span><br>Grapic artist and C# Programmer for a startup gamedev
+								company using unity3D </li>
+							<li><span>2017</span><br>Internship at OutOfTheBlue studios as Graphic artist</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="education">
+						<ul>
+							<li><span>2019-</span><br>B.tech Mathematics at Ondo State University of Science And
+								Technology</li>
+							<li><span>2017-2019</span><br>ND Computer Engineering at Ogun State Institute of Technology
+							</li>
+							<li><span>2009-2015</span><br>Doregos Private Academy</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!------services----->
+	<div id="services">
+		<div class="container">
+			<h1 class="sub-title">My Services</h1>
+			<div class="servicesL">
+				<div>
+					<i class="fa-sharp fa-solid fa-code"></i>
+					<h2>Wed Design</h2>
+					<p>Providing beautiful and eyecatching frontend landing pages and websites/ maintainace services</p>
+					<!-- <a href="#">learn more...</a> -->
+				</div>
+				<div>
+					<i class="fa-brands fa-unity"></i>
+					<h2>3D Mockup and renders</h2>
+					<p>Creating high detailed designs and models for game developement, archetecture, product
+						visualization and adverts Or Re-making real objects in the virtual space to suite various needs
+						and applications. If you can dream it, i can virtulize it </p>
+					<a href="gallary.html">See more...</a>
+				</div>
+				<div>
+					<i class="fa-brands fa-python"></i>
+					<h2>Sofware Developer</h2>
+					<p>Providing solutions to computational errors, complex analysis, problem solving and algorithm
+						optimizations. I work in the most effective languages in their respective fields and can quickly
+						adapt to any new language and enviroment.</p>
+					<a href="https://github.com/snebo">learn more...</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!---------portfolio----------->
+	<div id="portfolio">
+		<div class="container">
+			<h1 class="sub-title">My Works</h1>
+			<div class="work-List">
+				<div class="work">
+					<img src="pictures/game_project.png">
+					<div class="layer">
+						<h3>Python games and AI</h3>
+						<p>A series of different games that use comphrensive and simple python to function, whil also
+							adding an AI system</p>
+						<a href="https://github.com/snebo"><i class="fa-solid fa-up-right-from-square"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="pictures/IandE_projects.png">
+					<div class="layer">
+						<h3>Interior and Enviromental 3D designs</h3>
+						<p>Providing accurate and well detailed 3D models and renders of different designs and mokups
+						</p>
+						<a href="gallary.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="pictures/model_project.png">
+					<div class="layer">
+						<h3>Graphic design</h3>
+						<p>Creating quality and eyecatching logo's, designs and product reveals</p>
+						<a href="gallary.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="pictures/mono_project.png">
+					<div class="layer">
+						<h3>C# deevelopement in unity </h3>
+						<p>Rebuilding every aspect of monopoly game into a pushable android application. From the
+							models, scrips and UI all within the unity game engine</p>
+						<a href="https://github.com/snebo"><i class="fa-solid fa-up-right-from-square"></i></a>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="btn">See more..</a>
+		</div>
+	</div>
+
+	<!-----------------Contact--------->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h1 class="sub-title">Contact Me</h1>
+					<p><i class="fa-sharp fa-solid fa-paper-plane"></i> snebo54@hotmail.com</p>
+					<p><i class="fa-solid fa-square-phone"></i>+234 8161180938</p>
+					<div class="social-icons">
+						<a href="#" <i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+					</div>
+					<a href="downloadable_file/page.pdf" download class="btn btn2">Download CV</a>
+				</div>
+				<div class="contact-right">
+					<form name="submit-to-google-sheet">
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="Email" placeholder="Your E-mail" required>
+						<textarea name="Message" rows="6" placeholder="Your Message..."></textarea>
+						<button type="submit" class="btn btn2">Submit</button>
+					</form>
+					<span id="msg"></span>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>copright --add the symbol-- all images displayed are created and owned by me</p>
+		</div>
+
+	</div>
+	<script>
+
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+
+		function openTab(tabname) {
+
+			for (tablink of tablinks) {
+				tablink.classList.remove("activeL");
+			}
+			for (tabcontent of tabcontents) {
+				tabcontent.classList.remove("activeTab");
+			}
+
+			event.currentTarget.classList.add("activeL");
+			document.getElementById(tabname).classList.add("activeTab");
+		}
+	</script>
+
+	<script type="text/javascript">
+		var sidemenu = document.getElementById("sideMenu");
+		function openMenu() {
+			sidemenu.style.right = "0";
+		}
+		function closeMenu() {
+			sidemenu.style.right = "-200px";
+		}
+	</script>
+
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycby5YtMKxHvpBL1FJqW0VwGvhJqY4vnE_rExYrlfjhKuvUq5VVdpKIUKGNnVOENtGrOK/exec'
+		const form = document.forms['submit-to-google-sheet']
+		const msg = document.getElementById("msg");
+
+		form.addEventListener('submit', e => {
+			e.preventDefault()
+			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+				.then(response => {
+					msg.innerHTML = "Message Sent Successfully!";
+					setTimeout(function () {
+						msg.innerHTML = "";
+					}, 5000)
+					form.reset();
+				})
+				.catch(error => console.error('Error!', error.message))
+		})
+	</script>
+</body>
+
+</html>
